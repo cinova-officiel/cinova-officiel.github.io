@@ -60,6 +60,11 @@
     footer { text-align:center; color: var(--muted); padding: 28px 0 48px; font-size:.9rem; }
     .mark { width:64px; margin-top: 18px; }
     nav.sub { display:flex; flex-wrap:wrap; gap:8px 14px; justify-content:center; margin: 10px 0 0; font-size:.95rem; }
+    .shots { display:grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap:14px; margin: 14px 0 8px; }
+    .shot { margin:0; }
+    .shot a { display:block; }
+    .shot img { width:100%; height:168px; object-fit:cover; object-position:top; border-radius:12px; border:1px solid var(--line); display:block; background:#0c0c12; }
+    .shot figcaption { color: var(--muted); font-size:.88rem; margin-top:8px; }
   </style>
 </head>
 <body>
@@ -98,6 +103,39 @@
       <h2>C’est quoi Cinova ?</h2>
       <p>Une plateforme française de streaming. Films et séries (VF / VOSTFR), animes, TV en direct, Watch Parties, apps téléphone / Fire TV, extension navigateur.</p>
       <p>Cette page GitHub <b>n’héberge pas les films</b>. Elle sert uniquement à afficher les <b>vrais liens officiels</b>, pour ne pas tomber sur une copie.</p>
+    </section>
+    <section class="card" style="margin-top:14px">
+      <h2>À quoi ça ressemble</h2>
+      <p>Aperçu du vrai site : accueil, fiche, anime, scan et TV. Ce sont des captures, <b>pas un catalogue</b> — pour chercher un titre et regarder, ouvre <a href="https://cinova.online">cinova.online</a>.</p>
+      <div class="shots">
+        <figure class="shot">
+          <a href="https://cinova.online"><img src="./preuves/plateformes.jpg" alt="Accueil Cinova : Netflix, Prime Video, Paramount+"></a>
+          <figcaption>Accueil — films &amp; séries, logos des plateformes</figcaption>
+        </figure>
+        <figure class="shot">
+          <a href="https://cinova.online"><img src="./preuves/hero.jpg" alt="Accueil Cinova : reprendre un film"></a>
+          <figcaption>Accueil — reprendre un titre, bande-annonce</figcaption>
+        </figure>
+        <figure class="shot">
+          <a href="https://cinova.online"><img src="./preuves/fiche.jpg" alt="Fiche d’un film sur Cinova"></a>
+          <figcaption>Fiche — infos, lecture, saisons</figcaption>
+        </figure>
+        <figure class="shot">
+          <a href="https://cinova.online/anime"><img src="./preuves/animes.jpg" alt="Page Animes VF sur Cinova"></a>
+          <figcaption>Anime — catalogue VF / VOSTFR</figcaption>
+        </figure>
+        <figure class="shot">
+          <a href="https://cinova.online/scan"><img src="./preuves/scans.jpg" alt="Page Scan et manga sur Cinova"></a>
+          <figcaption>Scan — manga en ligne</figcaption>
+        </figure>
+        <figure class="shot">
+          <a href="https://cinova.online/live-tv"><img src="./preuves/livetv.jpg" alt="TV en direct sur Cinova"></a>
+          <figcaption>TV en direct — chaînes sport, Canal+, info</figcaption>
+        </figure>
+      </div>
+      <div class="cta" style="margin-top:16px">
+        <a class="btn btn-gold" href="https://cinova.online">Regarder sur cinova.online</a>
+      </div>
     </section>
     <section class="card warn" style="margin-top:14px">
       <h2>Attention aux faux sites</h2>
